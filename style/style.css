@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  background-color: #111;
+}
+
+#root {
+  /* all employee cards */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: 0px auto;
+  padding: 10px;
+}
+
+.employee-card {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1f8cbe;
+  background-color: #191919;
+  border-radius: 20%;
+  box-shadow: 10px 10px #020202;
+}
+
+.employee-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  /* border: 2px solid red; */
+}
+.employee-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.heading {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+.names {
+  padding: 10px;
+  color: white;
+  background-color: #191919;
+  font-size: 20px;
+}
+.company {
+  padding: 10px;
+  color: white;
+  background-color: #191919;
+  font-size: 20px;
+}
+
+.employee-card {
+  transition-property: all;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.employee-card:hover {
+  transform: scale(1.2);
+}
